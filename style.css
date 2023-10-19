@@ -55,16 +55,21 @@ nav {
   padding: 20px;
   max-width: 1600px;
 }
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
   
 .item1 { grid-area: 1 / 1 / 4 / 2; }
-.item2 { grid-area: 4 / 1 / 5 / 3; }
+.item2 { grid-area: 1 / 2 / 3 / 4; }
 .item3 { grid-area: 3 / 2 / 4 / 3; }
-.item4 { grid-area: 1 / 2 / 3 / 4; }
+.item4 { grid-area: 4 / 1 / 5 / 3; }
 .item5 { grid-area: 3 / 3 / 5 / 4; }
 .item6 { grid-area: 1 / 4 / 3 / 6; }
-.item7 { grid-area: 1 / 6 / 4 / 7; }
+.item7 { grid-area: 3 / 4 / 5 / 5; }
 .item8 { grid-area: 3 / 5 / 4 / 6; }
-.item9 { grid-area: 3 / 4 / 5 / 5; }
+.item9 { grid-area: 1 / 6 / 4 / 7; }
 .item10 { grid-area: 4 / 5 / 5 / 7; }
 
 img {
@@ -75,6 +80,27 @@ img {
   cursor: pointer;
 }
 
+.item:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: -100%; /* Initially position the caption outside the item's boundary. Adjust value if needed */
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: bottom 0.3s ease;
+}
+
+.item:hover .caption {
+  bottom: 0;
+}
+
+/* Modal */
 .modal {
   position: fixed;
   top: 0;

@@ -24,7 +24,7 @@ items.forEach(item => {
       imgElement.classList.remove('reveal');
       setTimeout(() => {
         modal.remove();
-      }, 500);
+      }, 300);
     });
   });
 });
