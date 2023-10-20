@@ -121,7 +121,9 @@ img {
     object-fit: cover;
     transform: scale(0.7);
     opacity: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: 
+      transform 0.5s ease-in-out, 
+      opacity 0.5s ease-in-out;
   }
 
 .modal img.reveal {

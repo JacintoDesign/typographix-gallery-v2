@@ -1,5 +1,5 @@
 // Allow for selection of image to trigger modal view
-const items = document.querySelectorAll('.grid > div');
+const items = document.querySelectorAll('.item');
 
 items.forEach(item => {
   item.title = 'Click to Enlarge';  
